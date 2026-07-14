@@ -200,7 +200,7 @@ table.tabela .col-acoes { text-align: right; white-space: nowrap; }
     align-items: center;
     gap: 18px;
     background: var(--branco);
-    border: 1.5px solid var(--azul);
+    border: 1.5px solid var(--cinza-borda);
     border-radius: var(--radius);
     padding: 20px 26px;
     margin-bottom: 28px;

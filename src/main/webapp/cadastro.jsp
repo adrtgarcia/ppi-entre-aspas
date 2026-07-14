@@ -46,8 +46,7 @@
                     <option value="Romance">Romance</option>
                     <option value="Mistério">Mistério</option>
                     <option value="Fantasia">Fantasia</option>
-                    <option value="Biografia">Biografia</option>
-                    <option value="Outro">Outro</option>
+                    <option value="Terror">Terror</option>
                 </select>
             </div>
             <div>

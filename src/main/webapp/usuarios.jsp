@@ -67,7 +67,14 @@
                                     </div>
                                     <div>
                                         <label>Gênero favorito</label>
-                                        <input type="text" name="generoFav" value="<%= u.getGeneroFav() %>">
+                                        	<select name="generoFav" required>
+							                    <option value="">-- Selecione --</option>
+							                    <option value="Ficção">Ficção</option>
+							                    <option value="Romance">Romance</option>
+							                    <option value="Mistério">Mistério</option>
+							                    <option value="Fantasia">Fantasia</option>
+							                    <option value="Terror">Terror</option>
+							                </select>
                                     </div>
                                     <div>
                                         <label>Nova senha (opcional)</label>
