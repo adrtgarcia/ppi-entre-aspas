@@ -58,6 +58,9 @@
                         <p class="subtitulo"><%= l.getAutor() %> · <%= l.getGenero() %> · <%= l.getAnoPublicacao() %></p>
                         <p><%= l.getSinopse() != null ? l.getSinopse() : "" %></p>
                         <a class="btn btn-outline btn-sm" href="<%= ctx %>/ficha-leitura?id=<%= l.getId() %>" target="_blank">Imprimir ficha de leitura</a>
+                        <% if (l.getCapaUrl() != null) { %>
+                        <a class="btn btn-outline btn-sm" href="<%= ctx %>/<%= l.getCapaUrl() %>" download>Baixar capa do livro</a>
+                        <% } %>
                         <hr>
 
                         <% if (podeGerenciar) { %>

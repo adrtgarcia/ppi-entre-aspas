@@ -16,7 +16,7 @@ import java.io.IOException;
 public class AuthFilter implements Filter {
 
     private static final String[] PUBLICO = {
-        "/login.jsp", "/login", "/cadastro.jsp", "/cadastro",
+        "/login.jsp", "/login", "/login-erro.jsp", "/cadastro.jsp", "/cadastro",
         "/css/", "/js/", "/img/", "/uploads/"
     };
 

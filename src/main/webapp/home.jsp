@@ -26,6 +26,9 @@
     </div>
     <div class="acoes">
         <a class="btn btn-azul" href="<%= ctx %>/carteirinha" target="_blank">Imprimir carteirinha</a>
+        <% if (logado.getFotoUrl() != null) { %>
+        <a class="btn btn-outline" href="<%= ctx %>/<%= logado.getFotoUrl() %>" download>Baixar foto de perfil</a>
+        <% } %>
         <button class="btn btn-outline" onclick="abrirModal('modal-editar-perfil')">Atualizar perfil</button>
         <button class="btn btn-perigo" onclick="abrirModal('modal-apagar-conta')">Apagar conta</button>
         <a class="btn btn-outline" href="<%= ctx %>/logout">Sair</a>

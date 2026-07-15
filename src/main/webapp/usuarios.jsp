@@ -67,14 +67,14 @@
                                     </div>
                                     <div>
                                         <label>Gênero favorito</label>
-                                        	<select name="generoFav" required>
-							                    <option value="">-- Selecione --</option>
-							                    <option value="Ficção">Ficção</option>
-							                    <option value="Romance">Romance</option>
-							                    <option value="Mistério">Mistério</option>
-							                    <option value="Fantasia">Fantasia</option>
-							                    <option value="Terror">Terror</option>
-							                </select>
+                                        <select name="generoFav" required>
+                                            <option value="" <%= (u.getGeneroFav() == null || u.getGeneroFav().isBlank()) ? "selected" : "" %>>-- Selecione --</option>
+                                            <option value="Ficção"   <%= "Ficção".equals(u.getGeneroFav())   ? "selected" : "" %>>Ficção</option>
+                                            <option value="Romance"  <%= "Romance".equals(u.getGeneroFav())  ? "selected" : "" %>>Romance</option>
+                                            <option value="Mistério" <%= "Mistério".equals(u.getGeneroFav()) ? "selected" : "" %>>Mistério</option>
+                                            <option value="Fantasia" <%= "Fantasia".equals(u.getGeneroFav()) ? "selected" : "" %>>Fantasia</option>
+                                            <option value="Terror"   <%= "Terror".equals(u.getGeneroFav())   ? "selected" : "" %>>Terror</option>
+                                        </select>
                                     </div>
                                     <div>
                                         <label>Nova senha (opcional)</label>

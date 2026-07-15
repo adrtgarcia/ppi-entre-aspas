@@ -35,6 +35,16 @@
 <url-pattern>/logout</url-pattern>
 </servlet-mapping>
 
+<!-- Mapeia a URL /login/erro diretamente para a JSP, sem precisar de um Servlet .java -->
+<servlet>
+<servlet-name>LoginErroJsp</servlet-name>
+<jsp-file>/login-erro.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+<servlet-name>LoginErroJsp</servlet-name>
+<url-pattern>/login/erro</url-pattern>
+</servlet-mapping>
+
 <servlet>
 <servlet-name>HomeServlet</servlet-name>
 <servlet-class>servlets.HomeServlet</servlet-class>
